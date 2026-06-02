@@ -1,0 +1,48 @@
+@import url("https://use.typekit.net/hem0guh.css");
+/* reseteo de estilos */
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    font-family: "dejavu-sans", sans-serif;
+    font-weight: 400;
+    font-style: italic;
+}
+.grid-container {
+    width: 90%;
+    max-width: 1200px;
+    margin: 0 auto;
+
+}
+.grid-title {
+    font-size: 2rem;
+    font-weight: 700;
+    margin-top: 50px;
+}
+.grid-title::after{
+    content: "";
+    display: block;
+    height: 30px;
+    background-color: #ff6fec;
+    width: 200px;
+    margin-top: 20px;
+}
+.galery_grid{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+    gap: 20px;
+    margin-top: 50px;
+    
+}
+.galery_item{
+    width: 200px;
+    height: 200px;
+}
+.gallery-img{
+    width: 100%;
+    height: 70%;
+    object-fit: cover;
+    border-radius: 10px;
+}
